@@ -1,2 +1,2 @@
-# Scripts
+# MouseShaker
 Just another repository

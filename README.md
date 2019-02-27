@@ -13,8 +13,8 @@ $timeStart = Get-Date -Format t
 $timeout = New-TimeSpan -Seconds $moves
 $NoEvent = $true
 $sw = [diagnostics.stopwatch]::StartNew()
-$Step = Read-Host "Co ile sekund mam ruszac myszka?"
-$moves = Read-Host "Przez ile sekund mam dzialac?"
+$Step = Read-Host "How many seconds should I move the mouse?"
+$moves = Read-Host "How many seconds do I have to work?"
 $operation = $moves / $step
 
  

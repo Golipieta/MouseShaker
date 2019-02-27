@@ -1,5 +1,11 @@
 # MouseShaker
 
+## Description
+MouseShaker is a script to move the mouse without touching it. (Useful in corpo ;))
+
+## Code
+
+``` powershell
 #Variables
 $output = @()
 $timeElapsed = get-date
@@ -9,7 +15,7 @@ $NoEvent = $true
 $sw = [diagnostics.stopwatch]::StartNew()
 $Step = Read-Host "Co ile sekund mam ruszac myszka?"
 $moves = Read-Host "Przez ile sekund mam dzialac?"
-$dzialanie = $moves / $step
+$operation = $moves / $step
 
  
 Function MouseShaker{
@@ -52,8 +58,9 @@ while ($sw.elapsed -lt $timeout){
     $elFinal = $($elapsedTime.ToString("hh\:mm\:ss"))
 
 
-Write-host "The script was activated at $timeStart and lasts for $elFinal, did $dzialanie moves." -ForegroundColor Yellow
-  $output += "The script was activated at $timeStart and lasts for $elFinal, did $dzialanie moves."
+Write-host "The script was activated at $timeStart and lasts for $elFinal, did $operation moves." -ForegroundColor Yellow
+  $output += "The script was activated at $timeStart and lasts for $elFinal, did $operation moves."
 
 
 $output | Out-File .\results.txt
+```

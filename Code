@@ -1,4 +1,3 @@
-``` powershell
 #Variables
 $output = @()
 $timeElapsed = get-date
@@ -56,4 +55,3 @@ Write-host "The script was activated at $timeStart and lasts for $elFinal, did $
 
 
 $output | Out-File .\results.txt
-```
